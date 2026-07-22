@@ -11,7 +11,7 @@ env/
 .ipynb_checkpoints/
 
 # Large raw WHO mortality data — download separately (see data README)
-24-austonb-nsoldin-2025sprsum/src/Data/WHO Mortality/Morticd10_part*
+src/Data/WHO Mortality/Morticd10_part*
 
 # Generated intermediate CSVs (notebook has optional to_csv lines)
 **/climate_df.csv

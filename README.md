@@ -19,7 +19,7 @@ analysis to characterize how temperature, maximum temperature, and precipitation
 to deaths across **age groups** and **causes of death**.
 
 The full write-up is in
-[`24-austonb-nsoldin-2025sprsum.pdf`](24-austonb-nsoldin-2025sprsum.pdf).
+[`milestone 1 report.pdf`](milestone%201%20report.pdf).
 
 ## Key findings
 
@@ -46,19 +46,18 @@ section).
 ├── README.md
 ├── requirements.txt
 ├── LICENSE
-├── 24-austonb-nsoldin-2025sprsum.pdf            # Full project report
-└── 24-austonb-nsoldin-2025sprsum/
-    └── src/
-        ├── Climate Change and Mortality Notebook.ipynb   # End-to-end analysis
-        └── Data/
-            ├── WBO Climate Data/                # Included (small)
-            │   ├── temperature_means_cru_timeseries.csv
-            │   ├── temperature_mean_max_cru_timeseries.csv
-            │   ├── precipitation_cru_timeseries.csv
-            │   └── wbo_pop.csv
-            └── WHO Mortality/
-                ├── country_codes                # Included (small)
-                └── Morticd10_part1..6           # NOT included — see "Data" below
+├── milestone 1 report.pdf                       # Full project report
+└── src/
+    ├── Climate Change and Mortality Notebook.ipynb   # End-to-end analysis
+    └── Data/
+        ├── WBO Climate Data/                    # Included (small)
+        │   ├── temperature_means_cru_timeseries.csv
+        │   ├── temperature_mean_max_cru_timeseries.csv
+        │   ├── precipitation_cru_timeseries.csv
+        │   └── wbo_pop.csv
+        └── WHO Mortality/
+            ├── country_codes                    # Included (small)
+            └── Morticd10_part1..6               # NOT included — see "Data" below
 ```
 
 ## Data
@@ -76,7 +75,7 @@ are **not** committed. To reproduce the full pipeline, download them from the
 and place them in:
 
 ```
-24-austonb-nsoldin-2025sprsum/src/Data/WHO Mortality/
+src/Data/WHO Mortality/
 ```
 
 Exact download configurations for each source are documented in the report.
@@ -92,7 +91,7 @@ pip install -r requirements.txt
 ## Running the analysis
 
 ```bash
-cd "24-austonb-nsoldin-2025sprsum/src"
+cd src
 jupyter lab
 ```
 
